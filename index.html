@@ -1,0 +1,163 @@
+<html>
+<head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <style type="text/css">
+    #demo{
+        width:500px;
+    }
+    .menu{
+        width:200px;
+        font-size:20;
+    }
+    .link{
+        text-decoration:none;
+    }
+    #media{
+        width:400px;
+        height:190px;
+        margin-right:-90px;
+    }
+    table{
+        background:linear-gradient(#F39C12,#34495E,#AECFC8,#884EA0);
+        width:1520px;
+    }
+    #micon{
+        margin-left:10px;
+        height:180px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    a:hover{
+        background-color:#45B39D;
+        height:100px;
+    }
+    #first{
+        width:200px;
+        height:70px;
+        transform:skew(20deg);
+        background:#555;
+    }
+    body{
+        background-color:
+    }
+    /End navigation bar & start slide show/ 
+    .maindiv{
+
+        position:relative; 
+        width: 1520px;
+        height: 500px;
+
+    }
+
+    .infirstbox{
+        width: 1520px;
+        height: 120px;
+        position: relative;
+        display: flex;
+    }
+    .sbox{
+
+        width: 253.33px;
+        height:100%;
+        position: relative;
+    }
+    .slideimage{
+       height: 100%;
+       width: 100%;
+
+   }
+   .button{
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+
+
+
+}
+
+
+
+.sport{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+
+  font-family:  'Alfa Slab One', cursive;
+
+
+
+
+
+}
+.sport:hover{
+    background-color: black;
+    color: red;
+
+
+}
+.ltext{
+    margin-top: 21%;
+
+
+}
+input[name=r]{
+    cursor: pointer;
+
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="webproject.css">
+<script type="text/javascript">
+    function sd(val){
+        var image = ["assets/img/s1.jpeg","assets/img/s2.jpeg","assets/img/s3.jpeg","assets/img/s4.jpeg","assets/img/s5.jpeg","assets/img/s6.jpeg"];
+        document.getElementById('imds1').setAttribute("src",image[val]);
+    }
+</script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img src="assets/img/club.jfif" id="micon"><b>Hexa Sports Club</b></td>
+            <td class="menu"><a href="/" class="link"><font color="#DE3163" family="Arial" size="24" id="first"><b>Home</b></font></a></td>
+            <td class="menu"><a href="contact.php" class="link"><font color="#DE3163" family="Arial" size="24">Contact</font></a></td>
+            <td class="menu"><a href="achievements.html" class="link"><font color="#DE3163" family="Arial" size="24">Club achievements</font></a></td>
+            <td><img src="assets/img/smallicons.jfif" id="media"></td>
+        </tr>
+    </table>
+    <!--The section containing the main images-->
+    <div class="maindiv" >
+        <img src="assets/img/img1.jpg" class="slideimage" id="imds1">
+
+        <div class="button">
+            <input type="radio" name="r" id="r1" value="0" onclick="sd(this.value)" checked="">
+            <input type="radio" name="r" id="r2" value="1" onclick="sd(this.value)">
+            <input type="radio" name="r" id="r3" value="2" onclick="sd(this.value)">
+            <input type="radio" name="r" id="r4" value="3" onclick="sd(this.value)">
+            <input type="radio" name="r" id="r5" value="4" onclick="sd(this.value)">
+            <input type="radio" name="r" id="r6" value="5" onclick="sd(this.value)">
+        </div>
+
+
+
+    </div>
+
+    <div class="infirstbox">
+
+        <div class="sbox"><a href="chess.html"><div class="sport"><p class="ltext">Chess</p></div><img src="assets/img/sboximg 1.jpg" class="slideimage"></a></div>
+        <div class="sbox"><a href="rifle-shooting.html"><div class="sport"><p class="ltext">Rifle Shooting</p></div><img src="assets/img/sboximg 2.jpg" class="slideimage"></a></div>
+        <div class="sbox"><a href="swimming.html"><div class="sport"><p class="ltext">Swimming</p></div><img src="assets/img/sboximg 3.jpg" class="slideimage"></a></div>
+        <div class="sbox"><a href="batminton.html"><div class="sport"><p class="ltext">Badminton</p></div><img src="assets/img/sboximg 4.jpg" class="slideimage"></a></div>
+        <div class="sbox"><a href="indoor-cricket.html"><div class="sport"><p class="ltext">Indoor cricket</p></div><img src="assets/img/sboximg 5.jpg" class="slideimage"></a></div>
+        <div class="sbox"><a href="table-tennis.html"><div class="sport"><p class="ltext">Table tennis</p></div><img src="assets/img/sboximg 6.jpg" class="slideimage"></a></div>
+    </div> 
+</body>
+</html>
